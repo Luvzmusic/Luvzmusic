@@ -210,9 +210,21 @@
             border-color: transparent;
         }
 
-        /* Images scaled down for items */
-        .grid-item img {
+        /* Images scaled down for music items */
+        .grid-1col .grid-item img {
             width: 70%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            border: 1px solid #666666;
+            margin-bottom: 5px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Images larger for photos tab to match music style */
+        .grid-3x3 .grid-item img {
+            width: 100%;
             aspect-ratio: 1 / 1;
             object-fit: cover;
             border: 1px solid #666666;
